@@ -1,0 +1,938 @@
+﻿<rss version='2.0'>
+  
+
+
+
+  <Release>
+    <name>4.01.0. 2013-05-12</name>
+    <News>
+      <new>Zamil Steel Saudi Price Book 2012 Rev. 02;</new>
+      <new>Zamil Steel Saudi revised Freight Manual April 10, 2013;</new>
+      <new>Selecting and modifying the default factory as required;</new>
+      <new>TML report won't stop in case of errors;</new>
+      <new>TML report prompts and logs errors in estimate sheet by Item code and row number.</new>
+    </News>
+  </Release>
+
+  
+
+
+  <Release>
+    <name>4.02.0 2013-07-07</name>
+    <News>
+      <new>Adding a new handling for custom items to save them in the active database;</new>
+      <new>Adding an option to find and replace items in the estimate sheet;</new>
+      <new>Importing portion(s) from eZ-Build files (Beta).</new>
+    </News>
+    <Bugs>
+      <Bug>Fixing minor weight difference in ABC sheet;</Bug>
+      <Bug>Other bug fixes.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.0.0 2013-09-23</name>
+    <News>
+      <new>Saudi prices update as per Sep. 15th, 2013;                                                                                                            </new>
+      <new>Two modifiers one for weight and one for price are added to the main estimate sheet input;                                                             </new>
+      <new>A command is added to automatically calculate and add a summation of a certain repeated item in the entire estimate to the end of the estimation sheet;</new>
+      <new>Custom items can be added inside the database of a specific estimation file. So they can be treated as database items inside the estimation file;      </new>
+      <new>Items can be searched and replaced by other items;                                                                                                     </new>
+      <new>Categories or groups can be imported from eZ-Build files without importing the entire file;                                                            </new>
+      <new>Tempcon package is handling bead mastic and sheeting angle;                                                                                            </new>
+      <new>Purlin/ Girts package is added;                                                                                                                        </new>
+      <new>Maxseam package is added for Zamil Steel India.                                                                                                        </new>
+    </News>
+  </Release>
+  <Release>
+    <name>5.01.0. 2013-12-29</name>
+    <News>
+      <new>This update initiates the software auto-update to be ready in eZ-Estimate;</new>
+      <new>Saudi Prices are updated according to Intelest 13-07 memo dated Dec. 8th, 2013;</new>
+      <new>Introducing a new tool “C:\eZ-Estimate\eZEstimateToSales.exe” that prepares the sheet to be sent to area offices. This tool removes the customization and unnecessary sheets from the eZ-Estimate file;</new>
+      <new>Adding a crane beam package;</new>
+      <new>Updated users’ manual.</new>
+    </News>
+    <Bugs>
+      <bug>Fixing Built-up and sheeting package bug;</bug>
+      <bug>Fixing “Add Freight” bug; no need to run TML report.</bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.01.1. 2014-01-16</name>
+    <News>
+      <new>Saudi Prices are updated according to Intelest 13-08 memo dated Dec. 29th, 2013;</new>
+      <new>Vietnam Prices are updated according to Price Book 2013 effective on Jan 1st, 2014.</new>
+    </News>
+    <Bugs>
+      <bug>Fixing Built-up package dialog infinite width in 2nd package call bug;</bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.02.0. 2014-02-27</name>
+    <News>
+      <new>A new package to handle mezzanine standard connections;</new>
+      <new>A new package to handle Hot-Rolled sections with shot blast and paint;</new>
+      <new>A new package to handle eave struts with eave strut clips and bolts;</new>
+    </News>
+    <Bugs>
+      <Bug>Packages are now working on PCs that have MS Office 64 bit installed;</Bug>
+      <Bug>Adding ASFAD file through ASFAD package is now separating connection plates from Built-ups;</Bug>
+      <Bug>Percentage of Anchor Bolts connection is adding the correct item in Built-up package;</Bug>
+      <Bug>Purlin/ Girts package is adding stich bolts for nested sections separately;</Bug>
+      <Bug>Purlin/ Girts package is handling Z290 sections with necessary clips and bolts;</Bug>
+      <Bug>Tempcon and sheeting packages are adding Stainless Steel Screws in case of Aluminum panel selection;</Bug>
+      <Bug>Quantity of Single Bead Mastic is corrected to include end laps and side laps as well;</Bug>
+      <Bug>Tempcon package is adding protective file on roof and wall;</Bug>
+      <Bug>Tempcon package is handling TCSO Fiber Reinforced Liner;</Bug>
+      <Bug>Built-up weight and TML information in Crane Beam Package is corrected;</Bug>
+      <Bug>Breakdown in the cover sheet is taking the weight of CANAM joist under Hot-Rolled;</Bug>
+      <Bug>Breakdown in the cover sheet is fixed when adding price modifiers;</Bug>
+      <Bug>Connection bolts M36, M42, and M48 are added to Saudi database;</Bug>
+      <Bug>Database items and prices have been adjusted according to Mr. Rasheed checking.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.02.1. 2014-03-05</name>
+    <News>
+      <new>Enhancement in Tempcon package by controlling its parameters in the visual interface;</new>
+      <new>Enhancement in sheeting package by controlling its parameters in the visual interface;</new>
+    </News>
+    <Bugs>
+      <Bug>Price and weight of eave strut clips for E290 sections have been adjusted;</Bug>
+      <Bug>Price correction for Z2445g;</Bug>
+      <Bug>Number of clips/ bolts for Z290 section in Purlins/Girts package are adjusted;</Bug>
+      <Bug>Tempcon package is adding stainless steel screws even if the bottom layer is aluminum;</Bug>
+      <Bug>Component breakdown is adjusted in case of adding container skids or secondary paint;</Bug>
+      <Bug>Sales breakdown is adjusted when making an estimate sheet from scratch with proper categories.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.03.0 2014-05-19</name>
+    <News>
+
+      <new>Ungroup option of a group;</new>
+      <new>Import/ Export custom items;</new>
+      <new>Flange stays package;</new>
+      <new>Quote data entry for SUCHI in the Cover Sheet;</new>
+      <new>Added sub purlins/ girts to database;</new>
+    </News>
+    <Bugs>
+      <Bug>Fixed receiving territory in exporting TML to Oracle to accept digits for India territory;                      </Bug>
+      <Bug>Fixed HR package when adding Hot-Dip galvanization. The package adds HDG for Hot-Rolled;                        </Bug>
+      <Bug>BU surface area calculations in BU package is adjusted;                                                         </Bug>
+      <Bug>Correcting eave strut clip sizes in eave strut package;                                                         </Bug>
+      <Bug>Correcting the addition of Tube 150X6.0 in hot-rolled package;                                                  </Bug>
+      <Bug>Correcting the addition of 3% over the area of the tempcon in tempcon package;                                  </Bug>
+      <Bug>Adjusting the price of crane beam built up section in crane beam package;                                       </Bug>
+      <Bug>Painting surface area in crane beam package is considering the hot-rolled cap channel;                          </Bug>
+      <Bug>Correcting number of bolts in different mezzanine connection package;                                           </Bug>
+      <Bug>Correcting the angle clips in mezzanine standard connection package according to SUM1403;                       </Bug>
+      <Bug>Correcting the price of angle clips in mezzanine connection package;                                            </Bug>
+      <Bug>Corrected breakdown reports in case of currency change;                                                         </Bug>
+      <Bug>Angle bracings are summed up in the hot-rolled component in the component breakdown;                            </Bug>
+      <Bug>Prices in the cover sheet are adjusted when manually changing the quantity of containers in the Sales breakdown;</Bug>
+      <Bug>Added ZSN different plate thicknesses in TML and MAT_PR sheet.                                                  </Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.03.1 2014-05-22</name>
+    <Bugs>
+      <Bug>Fixed prices issue for ZW panels in ZSN database;</Bug>
+      <Bug>Solved TML to Oracle dialog issue prevented it from appearing in some cases.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.03.2 2014-05-29</name>
+    <News>
+      <new>CANAM composite decking panels price update;</new>
+      <new>Delete a specific item from the entire Estimate sheet by replacing it with nothing.</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.03.3 2014-07-03</name>
+    <Bugs>
+      <Bug>CANAM composite decking panel MDEC-P3606-16 price fix;</Bug>
+      <Bug>Fixed description of ZPF trims;</Bug>
+      <Bug>Fixed Crane Runway package.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.04.0 2014-07-24</name>
+    <News>
+      <new>Added built up linear meter category report.</new>
+      <new></new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.05.0. 2014-09-30</name>
+    <News>
+      <new>Pricing with KG/LM in eZ-Estimate 5.5.0 As a new pricing method, KG/LM figures are introduced for Built-up, Hot-Rolled, and Crane beams sections. In this release, eZ-Estimate 5.5.0 can give the KG/LM ONLY for built-up sections. </new>
+      <new>This is only calculated after adding all required TML information for built-up and after running the TML report.</new>
+      <new>KG/LM will appear in a new column number 18 or “R”. The following is a summary of a simple procedure need to be followed in order to consider different prices of items according to KG/LM.</new>
+      <new>Work in eZ-Estimate 5.5.0 as your normal practice;</new>
+      <new>It is very important to add all the required TML information for all built-up fields;</new>
+      <new>After the completion of adding estimate items, RUN TML Report;</new>
+      <new>In column 18, you will find the KG/LM figure for the added built-up;</new>
+      <new>Use the attached finance figures to adjust the price modifier according to KG/LM category.</new>
+      <new>The same process needs to be repeated for all built-up fields;</new>
+      <new>In addition, for all HR and Crane beam sections the price modifier needs to be adjusted based on your MANUAL calculation of their KG/LM.</new>
+      <new>Zamil Steel Saudi Price Book 2014.</new>
+    </News>
+
+  </Release>
+
+  <Release>
+    <name>5.05.1. 2014-10-02</name>
+    <News>
+      <new>AUTOMATIC PRICE modification based on KG/LM for Built-up, Primary Paint, Shot Blast, Hot-Rolled by KG, and Crane Beam.</new>
+      <new></new>
+    </News>
+    <Notes>
+      <Note>For Built-up items KG/LM figures are automatically calculated after running the TML report;</Note>
+      <Note>For other items (Primary Paint, Shot Blast, Hot-Rolled by KG, and Crane Beam), users need to manually put the KG/LM figure in column 18.</Note>
+    </Notes>
+  </Release>
+
+  <Release>
+    <name>5.05.2. 2014-10-19</name>
+    <News>
+      <new>Importing assumption page in the cover sheet when importing eZ-Estimate file;</new>
+      <new>Importing weight and price modifiers in estimate sheet when importing eZ-Estimate file;</new>
+      <new>Resolving the OLE wait message when exporting custom items;</new>
+      <new>KG/LM breakdown for crane beam build up;</new>
+      <new>Minor bug fixes.</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.05.3. 2014-10-23</name>
+    <News>
+      <new>Processing speed enhancement for Sales and Material Breakdown Report;</new>
+      <new>Updating the material description of the Self Drilling Screws based on latest item master.</new>
+    </News>
+    <Notes>
+      <Note>For Built-up items KG/LM figures are automatically calculated after running the TML report;</Note>
+      <Note>For other items (Primary Paint, Shot Blast, Hot-Rolled by KG and Crane Beam), users need to manually put the KG/LM figure in column 18.</Note>
+    </Notes>
+  </Release>
+
+  <Release>
+    <name>5.06.0. 2014-11-17</name>
+    <News>
+      <new>	Fixed the calculation of the truck/ containers number in case of Tempcon freight;</new>
+      <new>	Handled the freight of custom items;</new>
+      <new>	Fixed the importing of group piece measure when importing eZ-Estimate files;</new>
+      <new>	Fixed sliding door package missing track;</new>
+      <new>	Adjustment of prices according to corrections by Mr. Rasheed Manthadathil;</new>
+      <new>	Adjustment of some ERP codes;</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.06.1. 2014-11-20</name>
+    <Bugs>
+      <Bug>Fixed the price of Hot-dip galvanization in KG in Saudi database.</Bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.06.2. 2014-12-11</name>
+    <Bugs>
+      <Bug>Fixed the price of Sliding Door Top Track #301.</Bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.06.3. 2015-01-05</name>
+    <Bugs>
+      <Bug>Corrected the price of some trims in Zamil Steel Saudi database;</Bug>
+      <Bug>Disabled the usage of non-stocked CANAM decks;</Bug>
+      <Bug>Corrected ERP code for some items to match SUCHI;</Bug>
+      <Bug>Corrected the calculation of number of trucks or containers in case of CANAM joists;</Bug>
+      <Bug>Enabled users to export TML to Oracle for quotes in addition to jobs.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.06.4. 2015-03-11</name>
+    <News>
+      <new>	Automatic run of reports when generating eZ-Estimate from eZ-Build;          </new>
+      <new>	Accessories section in TML report is now exported to Oracle file;            </new>
+      <new>	Items with no material codes are exported to Oracle TML file by description; </new>
+      <new>	One more page is added in the design assumptions section in the cover page;  </new>
+      <new>	Added two fields in the cover sheet for Approval and Detailing complexities. </new>
+    </News>
+    <Bugs>
+      <Bug>Corrected the missing items when adding sliding door package in Zamil Steel Vietnam;</Bug>
+      <Bug>Corrected the import of column R when importing an old eZ-Estimate file in a new one.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>5.06.5. 2015-03-16</name>
+    <News>
+      <new>Zamil Steel Egypt Database with ZERO item prices.</new>
+      <new></new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.07.0. 2015-05-26</name>
+    <News>
+      <new>PEB GCC Price Book - May'15;</new>
+      <new>Removed Tempcon PUR foam from the database.</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>5.08.1 2015-09-03</name>
+    <Bugs>
+      <Bug>Fixed the bug of missing crane cap channel in eZ-Build estimates.</Bug>
+      <Bug>Fixing material codes for FO items.</Bug>
+      <Bug>New material codes for windows and louvres.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.0.0. 2015-09-14</name>
+    <News>
+      <new>Added new Tempcon Prices published by BCOMS in Aug. 2015;.</new>
+      <new>Added STAAD input file as package (beta version) to estimate built-up tapered sections and hot-rolled sections.</new>
+    </News>
+    <Notes>
+      <Note>STAAD software shall be installed on the PC in order to run STAAD package;</Note>
+      <Note>STAAD package deals only with Tapered and Hot-Rolled definitions in the STAAD input file;</Note>
+      <Note>PRISM definition is not handled;</Note>
+      <Note>COLD FORMED definition is not handled;</Note>
+      <Note>Member offsets are neglected in length calculations;</Note>
+      <Note>Hot-Rolled members are added with their designated profiles as custom items, no TML will be generated for them;</Note>
+      <Note>Your feedback is very important in order to enhance the package and fix any unexpected bugs.</Note>
+    </Notes>
+  </Release>
+
+  <Release>
+    <name>6.0.1 2015-09-18</name>
+    <Bugs>
+      <Bug>Fixed the problem of KG/LM in other items like paint and SB.</Bug>
+      <Bug>Fixed the India database.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.01.1 2015-10-20 </name>
+    <Bugs>
+      <Bug>Primary paint=   price=   in=   PEB=   GCC=   Price=   Book=   –=   Oct.=  '15.</Bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.02.0 2015-11-22</name>
+    <News>
+      <new>	Added Zamil Steel India Prices 2015 Set A for trial purpose ONLY;</new>
+      <new>	Added SAP $2K input file as package (beta version) to estimate built-up tapered, hot-rolled sections and user-defined sections. </new>
+    </News>
+    <Bugs>
+      <Bug>Crane beam package can now differentiate between top and bottom flanges;</Bug>
+      <Bug>Importing freight information when importing a previously saved eZ-Estimate file;</Bug>
+      <Bug>Correcting weight of hot-rolled angles;</Bug>
+      <Bug>Added the price book signature in the middle footer of all printed pages.</Bug>
+    </Bugs>
+    <Notes>
+      <Note>SAP $2K package deals only with single or multiple tapering sections, Hot-Rolled definitions and user defined sections in the SAP $2K input file;</Note>
+      <Note>Members shall be grouped in user-defined groups in order for eZ-Estimate to recognize them;</Note>
+      <Note>Member offsets are neglected in length calculations;</Note>
+      <Note>Hot-Rolled as well as user-defined sections are added with their designated profiles as custom items, no TML will be generated for them;</Note>
+      <Note>No surface treatment will be added for user-defined sections;</Note>
+      <Note>Your feedback is very important in order to enhance the package and fix any unexpected issues.</Note>
+    </Notes>
+  </Release>
+
+  <Release>
+    <name>6.02.1  2015-11-29=  </name>
+    <Bugs>
+      <Bug>Updated Zamil Steel India Prices 2015 Set A R1 for trial purpose ONLY;</Bug>
+      <Bug>Removed HR section designation from the HR section profile string for SAP $2K package.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.02.2  2015-12-07</name>
+    <News>
+      <new>	Updated Zamil Steel India Prices 2015 R2 Set A for trial purpose ONLY;</new>
+      <new></new>
+    </News>
+    <Bugs>
+      <Bug>Special works are now reflecting to the cover sheet breakdown.</Bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.03.0  2016-01-06</name>
+    <News>
+      <new>Updated Zamil Steel Saudi Prices 2015 for standard BO prices as per memo date Dec. 29, 2015;</new>
+      <new>Updated land freight charges by 15% increase for Zamil Steel Saudi freight database;</new>
+      <new>Handled cylindrical coordinates in SAP2K package;</new>
+      <new>Added a warning in sliding door package if the dimensions exceeded the standard sizes.</new>
+    </News>
+    <Bugs>
+      <Bug>Fixed minor issues in SAP2K package.</Bug>
+      <bug></bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.03.1  2016-01-13</name>
+    <News>
+      <new>	Updated Zamil Steel India Prices 2015 Set B Rev. 1.0.</new>
+      <new></new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>6.03.2 2016-01-16</name>
+    <News>
+      <new>	Corrected the price of ZW 0.5mm panel for ZSN Price Book 2015- Set B as report by ZSN engineering.</new>
+      <new></new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>6.04.0 2016-02-18</name>
+    <News>
+      <new>
+        Added special paint package.
+      </new>
+      <new></new>
+    </News>
+    <Notes>
+      <Note>The special paint package is now working for Zamil Steel Saudi till other factories provide their labor charge figure.</Note>
+      <Note>According to Mr. Jalaj instructions, the use of the external paint calculation sheet need to be discontinued.</Note>
+    </Notes>
+  </Release>
+
+  <Release>
+    <name>6.04.1 2016-02-22 </name>
+    <News>
+      <new>	Updated Zamil Steel Saudi Price Book 2016 as per memo dated Feb. 18, 2016.</new>
+      <new>	Added the option of selecting Primary or Secondary Paint in the new Special Paint Package. </new>
+    </News>
+    <Bugs>
+      <Bug>Fixed the minor issue in some packages reported by ZSN that prevent some items in those package to be added.</Bug>
+      <Bug>Fixed the breakdown issue when adding the new Special Paint Package.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.04.2 2016-03-13</name>
+    <News>
+      <new>	Updated Zamil Steel India Price Book 2015 Set B- Rev. 2.</new>
+      <new>	Enhanced performance of generating reports.</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name>6.05.0. 2016-03-16</name>
+    <News>
+      <new>	Updated Zamil Steel Vietnam Price Book 2016 Set A.</new>
+      <new>	Updated Zamil Steel Vietnam freight charges according to ZSV Freight Manual Jan. 1st 2016.</new>
+    </News>
+    <Bugs>
+      <Bug>Fixed the minor issue in some packages reported by ZSN that prevent some items in those package to be added.</Bug>
+      <Bug>Fixed the breakdown issue when adding the new Special Paint Package.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>6.05.3. 2016-03-28</name>
+    <News>
+      <new>Added option in SAP$2K package to specify prefix characters of defined groups to be estimated.</new>
+      <new></new>
+    </News>
+    <Bugs>
+      <Bug>Updated the weight and prices of Maxseam clips in ZSV database.</Bug>
+      <Bug>Updated the prices of bracing connections in ZSV database.</Bug>
+    </Bugs>
+  </Release>
+
+  <Release>
+    <name>7.0.0. 2016-06-02 </name>
+    <News>
+      <new>Updated Zamil Steel Saudi Price Book 2016 Set A- Rev. 1 May 29th, 2016;</new>
+      <new>Added component breakdown (CPBD) report.</new>
+      <new>Removed FPBS report as it is not useful for one building area. A new tool will be released soon for combining all CPBD from added estimate sheets into one finance breakdown report for all added buildings.</new>
+      <new>Increased primary paint prices in ZSN database by 1.015.</new>
+    </News>
+  </Release>
+
+  <Release>
+    <name> 7.01.0. 2016-06-28 </name>
+    <News>
+      <new>Updated Zamil India Price Book 2016 Rev. 0 June 22nd, 2016.</new>
+      <new></new>
+    </News>
+    <Notes>
+      <Note> only prices for PPGA-550 are added into the Zamil Steel India database. PPGA-345 prices can be achieved by adding 1.013 into price modifier cell.</Note>
+      <Note></Note>
+    </Notes>
+  </Release>
+  <Release>
+    <name> 7.02.0 2016-07-18 </name>
+    <News>
+      <new>Updated Zamil India Price Book 2016 Rev. 0 July 20th, 2016.</new>
+      <new>Added historical release notes in help menu.</new>
+    </News>
+  </Release>
+  <Release>
+    <name> 7.03.0 2016-07-25 </name>
+    <News>
+      <new>Updated Zamil Vietnam Price Book 2016 Rev. 1 July 18th, 2016.</new>
+      <new></new>
+    </News>
+	<Bugs>
+      <Bug>Fixed the chequred plate price in ZSN database.</Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name> 7.04.0 2016-08-15 </name>
+    <News>
+      <new>Updated Zamil Steel Price Book 2016 Rev. 2 July 30, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.04.1  2016-08-16 </name>
+    <Bugs>
+      <Bug>Fixed the issue of adding cutom items in the ZSS database.</Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.04.2  2016-08-21 </name>
+    <Bugs>
+      <Bug>Corrected the prices of translucent panels insulation and liner trims in the ZSS database.</Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.04.3  2016-08-22 </name>
+    <Bugs>
+      <Bug>Corrected the prices of stainless screws for tempcon in the ZSS database.</Bug>
+      <Bug>Corrected the weight of the PVC downspout pipes in ZSV as per SUCHI. </Bug>
+    </Bugs>
+  </Release>    
+  <Release>
+    <name>7.05.0  2016-09-22 </name>
+	<News>
+      <new>Updated Zamil India Price Book 2016 Rev. 2 Sep. 8th, 2016.</new>
+      <new>Updated Zamil India Freight Manual April 2016 Rev. 0 and freight calculations.</new>
+	  <new>Added a warning message while opening a file when the template version is different than DLL version. </new>
+	  <new>Enhanced freight calculations. </new>
+	  <new>Add item form can now be used to add several items without closing it.</new>
+    </News>
+    <Bugs>
+      <Bug>Added the price of insulation accessories in Zamil Saudi Database. </Bug>
+      <Bug>Corrected TML error in Zamil Vietnam database when adding RS-FAST-100.</Bug>
+	  <Bug>Corrected TML quantity for HSBM M12x35 in Zamil Vietnam database. </Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.05.1  2016-09-29 </name>
+    <Bugs>
+      <Bug>Fixed TML for BU section in STAAD package. </Bug>
+      <Bug>Fixed the container skid weight and price in Zamil India database.</Bug>
+	  <Bug>Removed shot blast and DSW from crane beam package. </Bug>
+	  <Bug>Updated the currency exchange rates. </Bug>
+	  <Bug>Added PFC300 in crane beam package available  cap channels. </Bug>
+	  <Bug>Sorted the list of Material Codes and CPBD Codes in Custom Item form alphabetically. </Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.05.2  2016-10-02 </name>
+    <Bugs>
+      <Bug>Corrected Material Codes and CPBD Codes when opening Custom Item form. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.05.3  2016-10-09 </name>
+    <Bugs>
+      <Bug>Corrected TML weight for Hot-Rolled channels. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.06.0  2016-10-17 </name>
+    <News>
+      <new>Zamil Egypt October Factory Price Book Set 1 Trial 2016 Rev. 0 Sep. 21, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.06.2  2016-10-18 </name>
+    <Bugs>
+      <Bug>Corrected for automatic update. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>7.07.0  2016-10-23 </name>
+    <News>
+      <new>Zamil Egypt Sadat Factory Price Book Set 2 Trial 2016 Rev. 0 Sep. 21, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.08.0  2016-10-25 </name>
+    <News>
+      <new>Zamil Steel India Factory Price Book 2016 Rev. 3 Oct. 19, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.08.1  2016-11-13 </name>
+    <News>
+      <new>Zamil Egypt Sadat Factory Price Book Set 2 Trial 2016 Rev. 2 Nov. 7, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.08.2  2016-11-24 </name>
+    <Bugs>
+      <Bug>Corrected description for mezzanine decking item in ZSV database. </Bug>
+      <Bug>Corrected the prices of 0.7 ZPF trims in ZSS database.</Bug>
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>7.09.0  2016-11-29 </name>
+    <News>
+      <new>Zamil Steel India Factory Price Book 2016 Rev. 4 Nov. 27, 2016.</new>
+      <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>7.09.1  2016-11-30 </name>
+    <Bugs>
+      <Bug>Corrected Type S price in ZSN database Price Book 2016 Rev. 4 Nov. 27, 2016.. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>7.10.0  2016-12-29 </name>
+    <News>
+      <new>Zamil Steel India Factory Price Book 2016 Rev. 5 Dec. 29, 2016.</new>
+      <new></new>
+    </News>
+	<Bugs>
+      <Bug>Corrected Tempcon freight calculation for Zamil Steel India. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>8.0.0  2017-01-05 </name>
+    <News>
+      <new>Updated Zamil Egypt Sadat Factory Price Book Set 2 Trial 2017 Rev. 3 Jan. 3, 2017.</new>
+	  <new>Updated Zamil Saudi Factory prices for CANAM Decking Jan. 3, 2017.</new>
+    </News>
+  </Release>
+  <Release>
+    <name>8.01.0  2017-01-19 </name>
+    <News>
+      <new>Enabled FINANCE  PRICE  BREAKDOWN  SHEET (FPBS) for Zamil Steel India.</new>
+	  <new>Restrict the saving function if certain cells in FPBS are left blank.</new>
+    </News>
+		<Bugs>
+      <Bug>Corrected land freight charges for few destinations in Zamil Steel Saudi freight database. </Bug>
+      <Bug>Corrected the weight and price per square meter for CANAM Deck 2432.</Bug>
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>8.02.0  2017-02-01 </name>
+    <News>
+      <new>Updated Zamil Egypt Sadat Factory Price Book Set 2 Trial 2017 Rev. 4 Jan. 31, 2017.</new>
+	  <new></new>
+    </News>
+  </Release>
+  <Release>
+    <name>8.02.1  2017-02-12 </name>
+    <Bugs>
+      <Bug>Corrected adding custom items in Zamil Egypt Sadat Factory database. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>8.03.0  2017-02-16 </name>
+    <News>
+      <new>Updated Zamil Saudi PEB Factory Price Book 2016 Rev. 4 Feb 16, 2017 for BCOMS Tempcon Prices .</new>
+	  <new></new>
+    </News>
+  </Release> 
+  <Release>
+    <name>9.0.0  2017-03-09 </name>
+    <News>
+      <new>Updated Zamil Steel India Factory Price Book 2017 Rev. 0 March 08, 2017.</new>
+	  <new>Adjusted FPBS for Zamil Steel India Factory.</new>
+	  <new>Added export function for Zamil Steel India Factory to CSV format that matches SUCHI ZSAL_PRODUCT_DETAILS.</new>
+    </News>
+  </Release>    
+  <Release>
+    <name>9.01.0  2017-03-18 </name>
+    <News>
+      <new>Updated Zamil Saudi PEB Factory Price Book 2016 Rev. 5 March 12, 2017.</new>
+	  <new></new>
+    </News>
+	<Bugs>
+      <Bug>Corrected FPBS error for Zamil Steel India for shot blasting. </Bug>
+      <Bug>Corrected mismatch in staircase item code for Zamil Steel India.</Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>9.01.1  2017-03-21 </name>
+    <News>
+      <new>Updated Zamil Steel India Factory Price Book 2017 Rev. 1 March 20, 2017.</new>
+	  <new>Added a warnning image in the cover sheet if the tempate version is different than DLL version</new>
+    </News>
+	<Bugs>
+      <Bug>Corrected Zamil Saudi PEB Factory hot-rolled tube prices. </Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>   
+  <Release>
+    <name>9.02.0  2017-04-10 </name>
+    <News>
+      <new>Updated Zamil Saudi PEB Factory Price Book 2016 Rev. 6 April 2, 2017.</new>
+	  <new>Added freight calculation to Zamil Egypt SADAT Factory.</new>
+	  <new>Added special paint calculation for Zamil Egypt SADAT Factory.</new>
+    </News>
+	<Bugs>
+      <Bug>Corrected Zamil Saudi India tax calculations in FPBS for VAT/CST. </Bug>
+      <Bug>Disconnect general HR angle item from material inventory for Zamil Saudi India Factory.</Bug>
+    </Bugs>
+  </Release>    
+  <Release>
+    <name>9.03.0  2017-05-10 </name>
+    <News>
+      <new>Updated Zamil Saudi PEB Factory Freight Manual May, 2017.</new>
+      <new>Added Polycarbonate translucent panels 2.0mm and 3.0mm for S and ZW profiles.</new>
+    </News>
+  </Release>
+  <Release>
+    <name>9.04.0  2017-06-11 </name>
+    <News>
+      <new>Updated Zamil Saudi PEB Factory Price Book 2016 Rev. 7 June 4, 2017 for BCOMS Tempcon Prices.</new>
+	  <new></new>
+    </News>
+	<Bugs>
+      <Bug>Adjusted TML Plate space for allowing more thicknesses.</Bug>
+      <Bug>Fixed non-prismatic multi-tapered section definition in SAP$2K package.</Bug>
+	  <Bug>Fixed Trans. panel weight in Zamil Saudi PEB Factory.</Bug>
+	  <Bug>Fixed Zamil Steel Vietnam TML for 30mm plate thickness.</Bug>
+	  <Bug>Fixed ZSN classic handrail price.</Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>9.04.1  2017-07-06 </name>
+    <News>
+      <new>Revised FPBS for Zamil Steel India.</new>
+	  <new></new>
+    </News>
+	<Bugs>
+      <Bug>Fixed Tempcon codes for compatibility.</Bug>
+      <Bug></Bug>
+
+    </Bugs>
+  </Release>
+  <Release>
+    <name>9.05.0  2017-07-20 </name>
+    <News>
+	  <new>Updated Zamil Egypt Sadat Factory Price Book 2017 Rev. 0 July 12, 2017.</new>
+	  <new>Updated Zamil Steel India Factory Price Book 2017 Rev. 2 July 16, 2017.</new>
+	</News>
+	<Bugs>
+      <Bug>Corrected item summation for items with no weight.</Bug>
+      <Bug></Bug>
+
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>9.06.0  2017-09-12 </name>
+    <News>
+	  <new>Updated Zamil Steel SADAT Factory Price Book 2017 Rev. 1 Aug. 23, 2017.</new>
+	  <new>Updated Zamil Steel India Factory Price Book 2017 Rev. 3 Sep. 6, 2017.</new>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2017 Rev. 0 Sep. 6, 2017.</new>
+	</News>
+  </Release>  
+  <Release>
+    <name>9.06.1  2017-11-16 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2017 Rev. 1 Nov. 13, 2017 for BCOMS Tempcon and Firecon prices.</new>
+	  <new></new>
+	</News>
+  </Release>  
+  <Release>
+    <name>9.07.0  2017-11-26 </name>
+    <News>
+	  <new>Updated Zamil Steel Egypt Factory Price Book 2017 Rev. 0 Nov. 18, 2017 for Saudi customers.</new>
+	  <new>Updated Zamil Steel Egypt Factory Price Book 2017 Rev. 0 Nov. 18, 2017 for Egypt customers.</new>
+	  <new>Added an option to estimate HR sections in SAP$2k files by KG.</new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.08.0  2018-01-10 </name>
+    <News>
+	  <new>Updated Zamil Steel Vietnam Factory Price Book as per Jan 2018 Price Book.</new>
+	  <new>Adding 245Z15, 245Z17, 245Z22, 290Z17, 290Z22 for Zamil Steel Saudi Factory current database.</new>
+	</News>
+  </Release> 
+  <Release>
+    <name>9.08.1  2018-01-18 </name>
+    <News>
+	  <new>Updated Zamil Steel India Factory Price Book as per Jan. 2018 Price Book.</new>
+	  <new></new>
+	</News>
+  </Release> 
+  <Release>
+    <name>9.08.2  2018-01-28 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 0 as per Jan. 28, 2018.</new>
+	  <new>Added plates 14mm, 16mm, and 18mm to material database.</new>  
+	</News>
+	<Bugs>
+      <Bug>Updated cage ladder price in Zamil Steel Vietnam Factory Price Book 2018.</Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release>    
+    <Release>
+    <name>9.08.3  2018-02-20 </name>
+    <News>
+	  <new>Added Type S 0.45mm Zincalume FW to Zamil Saudi database.</new>
+	  <new>Updated plates inventory code to be common between ZSE and ZSS.</new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.08.4  2018-03-01 </name>
+    <News>
+	  <new>Updated Zamil Steel India Factory Price Book 2018 Rev. 1 Feb. 27, 2018.</new>
+	  <new></new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.0  2018-03-27 </name>
+    <News>
+	  <new>Updated Zamil Steel India Factory Freight Prices 2018.</new>
+	  <new>Updated Zamil Steel Egypt October Factory Prices for Egypt Customers Rev. 0 as per March 18, 2018.</new>
+	  <new>Updated Zamil Steel Egypt October Factory Prices for Saudi Customers Rev. 0 as per March 18, 2018.</new>
+	  <new>Updated Zamil Steel SADAT Factory Price Book 2018 Rev. 0 March 19, 2018.</new>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 1 March 25, 2018 for BCOMS Tempcon and Firecon prices.</new>
+	</News>
+	<Bugs>
+      <Bug>Fixed TML generation of ISMC channels for Zamil Steel India.</Bug>
+      <Bug></Bug>
+    </Bugs>
+  </Release> 
+  <Release>
+    <name>9.09.0.1  2018-05-21 </name>
+    <News>
+	  <new>Updated plate thicknesses for Zamil Steel Vietnam Factory.</new>
+	  <new>Added automatic KG/LM for BU packages in all items. </new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.1.0  2018-05-28 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 2 May 28, 2018 for BCOMS Tempcon and Firecon prices.</new>
+	  <new></new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.2.0  2018-07-05 </name>
+    <News>
+	  <new>Updated Zamil Steel India Factory Price Book 2018 Rev. 2 June 28, 2018.</new>
+	  <new></new>
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.3.0  2018-07-31 </name>
+    <News>
+	  <new>Updated Zamil Steel Egypt October Factory Prices for Egypt Customers Rev. 1 as per July 23, 2018.</new>
+	  <new>Updated Zamil Steel Egypt October Factory Prices for Saudi Customers Rev. 1 as per July 23, 2018.</new>
+	  <new>Updated Zamil Steel Egypt SADAT Factory Prices for Egypt Customers Rev. 1 as per July 23, 2018.</new>
+	  <new>Updated Zamil Steel Egypt SADAT Factory Prices for Saudi Customers Rev. 0 as per July 23, 2018.</new>
+	</News>
+  </Release>  
+  <Release>
+    <name>9.09.4.0  2018-09-06 </name>
+    <News>
+	  <new>Updated Zamil Steel Vietnam Factory Price Book as per Aug. 2018 Price Book.</new>
+	  <new>Eliminate message boxes while generating TML report and give them all at end of the report.</new>  
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.5.0  2018-09-10 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 3 Sep. 6, 2018.</new>
+	  <new></new>  
+	</News>
+	<Notes>
+      <Note>Sweep blasting prices are added for the above price book which are subject to KG/LM figure.</Note>
+      <Note></Note>
+    </Notes>
+  </Release>  
+  <Release>
+    <name>9.09.6.0  2018-11-15 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 4 Nov. 5, 2018 for BO and SBO prices.</new>
+	  <new>Updated Zamil Steel India Factory Price Book 2018 Rev. 3 Nov. 5, 2018.</new>  
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.7.0  2018-12-26 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 5 Dec. 19, 2018 for fabricated items.</new>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 5 Dec. 23, 2018 for BECOMS prices.</new>  
+	</News>
+  </Release>   
+  <Release>
+    <name>9.09.8.0  2019-01-22 </name>
+    <News>
+	  <new>Updated Zamil Steel Saudi Factory Price Book 2018 Rev. 6 Jan. 10, 2019 for CANAM DECK prices.</new>
+	  <new>Updated Zamil Steel India Factory Price Book 2019 Rev. 0 Jan. 13, 2019.</new>
+	  <new>Updated Zamil Steel Egypt October Factory Prices for Egypt Customers 2019 Rev. 0 Jan. 14, 2019.</new>	  
+	</News>
+  </Release>
+  <Release>
+    <name>9.09.8.1  2019-01-27 </name>
+    <News>
+	  <new>Enable FPBS Report for Zamil Steel Vietnam.</new>
+	  <new></new>  
+	</News>
+	<Bugs>
+      <Bug>Fixed TML generation of Expansion Bolt for Framed Opening in Zamil Steel Saudi.</Bug>
+      <Bug>Corrected Framed Opening Package to correctly add expansion bolts. </Bug>
+    </Bugs>
+  </Release>
+  <Release>
+    <name>9.10.0.0  2019-02-28 </name>
+    <News>
+	  <new>Updated Zamil Steel Vietnam prices based on discountable/ un-discountable price book March 1st, 2019.</new>
+	  <new>Updated Zamil Steel Vietnam freight charges based on January 2019 freight manual.</new>  
+	  <new>Updated Zamil Steel Saudi prices based on discountable/ un-discountable price book March 1st, 2019.</new>
+	  <new>Updated Zamil Steel Saudi freight charges based on Feb. 2019 freight manual.</new>
+	</News>
+  </Release>      
+</rss>
